@@ -1,0 +1,1228 @@
+{
+  "authorization" : "PRIME_APP",
+  "name" : "cx1",
+  "languages" : {
+    "en" : {
+      "name" : "English"
+    },
+    "de" : {
+      "name" : "German"
+    },
+    "fr" : {
+      "name" : "French"
+    }
+  },
+  "defaultLanguage" : "en",
+  "pageSize" : 12,
+  "attributes" : {
+    "loginViewName" : "cx1LoginView",
+    "passwordChangeView" : "cx1PasswordChange",
+    "applicationView" : {
+      "saveMessage" : "removed the wrap application view",
+      "application" : "cx1",
+      "viewName" : "cx1AppView",
+      "renderer" : "web",
+      "definition" : {
+        "attributes" : {
+          "reloadOnEveryLoad" : false,
+          "wrapApplicationView" : false
+        },
+        "modes" : {
+          "basic" : {
+            "name" : "container",
+            "key" : "a1ca16f8-8745-4c86-a3b8-8d1cdf9a9376",
+            "type" : "FlexGrid",
+            "displaySequence" : 0.0,
+            "uiAttributes" : {
+              "mainStyle" : {
+                "flex" : 1.0
+              }
+            },
+            "children" : {
+              "b87af0c8-f1d9-46fc-819f-fb6372cbb9f0" : {
+                "name" : "loader",
+                "key" : "b87af0c8-f1d9-46fc-819f-fb6372cbb9f0",
+                "type" : "Loader",
+                "visibility" : {
+                  "path" : "_application.pendingCounter",
+                  "checkValue" : 0.0,
+                  "type" : "notEqual"
+                }
+              },
+              "de3e30dc-f0e4-4b0d-9277-09b6e6dc7516" : {
+                "name" : "headerWidget",
+                "key" : "de3e30dc-f0e4-4b0d-9277-09b6e6dc7516",
+                "type" : "Widget",
+                "attributes" : {
+                  "name" : "headerWidget"
+                },
+                "children" : {
+                  "effa945f-b372-4372-b981-d6a635c4e613" : {
+                    "name" : "titleGrid",
+                    "key" : "effa945f-b372-4372-b981-d6a635c4e613",
+                    "type" : "FlexGrid",
+                    "displaySequence" : 0.0,
+                    "uiAttributes" : {
+                      "mainStyle" : {
+                        "0" : {
+                          "className" : "logoBar flexHorizontal"
+                        }
+                      }
+                    },
+                    "children" : {
+                      "c8b1e9ef-9341-466b-87f8-451051529a93" : {
+                        "name" : "toggle",
+                        "key" : "c8b1e9ef-9341-466b-87f8-451051529a93",
+                        "type" : "FlexGrid",
+                        "uiAttributes" : {
+                          "mainStyle" : {
+                            "0" : {
+                              "className" : "barBlip"
+                            }
+                          }
+                        },
+                        "children" : {
+                          "03aa375e-4357-448d-ae19-57ddb0ce5593" : {
+                            "name" : "menuToggle",
+                            "key" : "03aa375e-4357-448d-ae19-57ddb0ce5593",
+                            "type" : "Image",
+                            "attributes" : {
+                              "alt" : "<",
+                              "src" : "/images/arrow.svg"
+                            },
+                            "uiAttributes" : {
+                              "mainStyle" : { },
+                              "imgStyle" : {
+                                "0" : {
+                                  "width" : "20px",
+                                  "height" : "40px",
+                                  "transition" : "transform 0.5s ease-in-out",
+                                  "marginLeft" : "10px"
+                                },
+                                "2" : {
+                                  "className" : "imgrotate",
+                                  "condition" : {
+                                    "path" : ">menuClose",
+                                    "checkValue" : true,
+                                    "type" : "equal",
+                                    "notStrict" : true
+                                  }
+                                }
+                              }
+                            },
+                            "eventMap" : "menuToggle"
+                          }
+                        }
+                      },
+                      "2f0c814b-cbe3-48f0-84a2-accc7ffe4b8e" : {
+                        "name" : "mainLogo",
+                        "key" : "2f0c814b-cbe3-48f0-84a2-accc7ffe4b8e",
+                        "type" : "Image",
+                        "attributes" : {
+                          "alt" : "members logo",
+                          "src" : "/images/Unilogcx1.svg"
+                        },
+                        "uiAttributes" : {
+                          "mainStyle" : {
+                            "0" : {
+                              "className" : "unilog"
+                            }
+                          },
+                          "imgStyle" : {
+                            "0" : {
+                              "width" : "120px"
+                            }
+                          }
+                        }
+                      },
+                      "2f0c814b-cbe3-48f0-84a2-accc7ffe4b8f" : {
+                        "name" : "patentLogo",
+                        "key" : "2f0c814b-cbe3-48f0-84a2-accc7ffe4b8f",
+                        "type" : "Image",
+                        "attributes" : {
+                          "src" : "api/asset/v1/sam/file/1/logos/pplogo.svg"
+                        },
+                        "uiAttributes" : {
+                          "mainStyle" : {
+                            "0" : {
+                              "width" : "55px",
+                              "marginLeft" : "15px",
+                              "opacity" : "0.75"
+                            }
+                          }
+                        }
+                      },
+                      "57e3172f-ea1f-4c10-aa1a-4dbc3e7583ca" : {
+                        "name" : "rightGrid",
+                        "key" : "57e3172f-ea1f-4c10-aa1a-4dbc3e7583ca",
+                        "type" : "FlexGrid",
+                        "uiAttributes" : {
+                          "mainStyle" : {
+                            "0" : {
+                              "className" : "logoBarIcons hideInMobileFlex flexHorizontal"
+                            }
+                          }
+                        },
+                        "children" : {
+                          "4f7e621e-4789-49fd-93d1-bad9531635be" : {
+                            "name" : "helpDropdownContainer",
+                            "key" : "4f7e621e-4789-49fd-93d1-bad9531635be",
+                            "type" : "FlexGrid",
+                            "uiAttributes" : {
+                              "mainStyle" : {
+                                "0" : {
+                                  "position" : "relative",
+                                  "justifyContent" : "center"
+                                }
+                              }
+                            },
+                            "children" : {
+                              "411856d7-acd5-4f92-8c02-1552e0bd7121" : {
+                                "name" : "helpMenu",
+                                "key" : "411856d7-acd5-4f92-8c02-1552e0bd7121",
+                                "type" : "FlexGrid",
+                                "uiAttributes" : {
+                                  "mainStyle" : {
+                                    "0" : {
+                                      "className" : "flexHorizontal",
+                                      "alignItems" : "center"
+                                    }
+                                  }
+                                },
+                                "children" : {
+                                  "5ae94446-bd07-452b-a003-d9afee04749b" : {
+                                    "name" : "helpTitle",
+                                    "key" : "5ae94446-bd07-452b-a003-d9afee04749b",
+                                    "type" : "Button",
+                                    "attributes" : {
+                                      "toolTipText" : "Help",
+                                      "leftIcon" : "help-icon"
+                                    },
+                                    "uiAttributes" : {
+                                      "mainStyle" : { },
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "iconCenterButtonForMenu"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "helpTitle"
+                                  }
+                                }
+                              },
+                              "9c11d123-5900-4999-99db-303c59b81694" : {
+                                "name" : "helpDropdown",
+                                "key" : "9c11d123-5900-4999-99db-303c59b81694",
+                                "type" : "FlexGrid",
+                                "visibility" : {
+                                  "path" : ">openHelpMenu",
+                                  "checkValue" : true,
+                                  "type" : "equal",
+                                  "notStrict" : true
+                                },
+                                "uiAttributes" : {
+                                  "mainStyle" : {
+                                    "0" : {
+                                      "className" : "flexGridMenuBody",
+                                      "width" : "250px",
+                                      "left" : "-35px"
+                                    }
+                                  }
+                                },
+                                "children" : {
+                                  "8ad61362-703c-44f1-af0c-471a9b00720c" : {
+                                    "name" : "helpButton1",
+                                    "type" : "Button",
+                                    "key" : "8ad61362-703c-44f1-af0c-471a9b00720c",
+                                    "value" : "Platform Overview",
+                                    "uiAttributes" : {
+                                      "mainStyle" : { },
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "helpButton1"
+                                  },
+                                  "36ee396c-1a0b-46c3-9c21-0bf45494778a" : {
+                                    "name" : "helpButton2",
+                                    "type" : "Button",
+                                    "key" : "36ee396c-1a0b-46c3-9c21-0bf45494778a",
+                                    "value" : "Catalogs and Workspaces",
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "helpButton2"
+                                  },
+                                  "176edf1b-6bb8-43fa-b699-5193a7050838" : {
+                                    "name" : "helpButton3",
+                                    "type" : "Button",
+                                    "key" : "176edf1b-6bb8-43fa-b699-5193a7050838",
+                                    "value" : "Private Item Creation and Management",
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "helpButton3"
+                                  },
+                                  "7ae9cd71-8074-4d82-bac5-e89c5e0d7836" : {
+                                    "name" : "helpButton4",
+                                    "type" : "Button",
+                                    "key" : "7ae9cd71-8074-4d82-bac5-e89c5e0d7836",
+                                    "value" : "Exports, Imports and Scheduling",
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton",
+                                          "fontSize" : "12px",
+                                          "justifyContent" : "unset",
+                                          "width" : "100%"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "helpButton4"
+                                  },
+                                  "9767aba5-0c81-42c0-a275-4dc79283511d" : {
+                                    "name" : "helpButton7",
+                                    "type" : "Button",
+                                    "key" : "9767aba5-0c81-42c0-a275-4dc79283511d",
+                                    "value" : "Taxonomy Management and Mapping",
+                                    "uiAttributes" : {
+                                      "mainStyle" : { },
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "helpButton7"
+                                  },
+                                  "e441e464-0241-44c3-af3f-fce7120e8344" : {
+                                    "name" : "helpButton5",
+                                    "type" : "Button",
+                                    "key" : "e441e464-0241-44c3-af3f-fce7120e8344",
+                                    "value" : "Quick Reference / Cheatsheets",
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "helpButton5"
+                                  },
+                                  "0aea4141-f50d-4324-97df-31cbd28a74e2" : {
+                                    "name" : "helpButton6",
+                                    "type" : "Button",
+                                    "key" : "0aea4141-f50d-4324-97df-31cbd28a74e2",
+                                    "value" : "User Management",
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "helpButton6"
+                                  }
+                                }
+                              }
+                            },
+                            "attributes" : {
+                              "MOUSEOUT" : "helpDropdownContainer_MOUSEOUT"
+                            }
+                          },
+                          "9ac2cc7d-9bc0-4772-bd4d-e54f1671fdc6" : {
+                            "name" : "settingsButton",
+                            "key" : "9ac2cc7d-9bc0-4772-bd4d-e54f1671fdc6",
+                            "type" : "Button",
+                            "attributes" : {
+                              "toolTipText" : "Settings",
+                              "leftIcon" : "settings-icon"
+                            },
+                            "uiAttributes" : {
+                              "mainStyle" : {
+                                "0" : {
+                                  "paddingTop" : "5px"
+                                }
+                              },
+                              "buttonStyle" : {
+                                "0" : {
+                                  "className" : "iconCenterButtonForMenu",
+                                  "zIndex" : 1.0
+                                }
+                              }
+                            },
+                            "eventMap" : "settingsButton"
+                          },
+                          "9622e16c-41ac-48c4-8c13-4d9fdbe2e4b5" : {
+                            "name" : "bellButton",
+                            "key" : "9622e16c-41ac-48c4-8c13-4d9fdbe2e4b5",
+                            "type" : "Button",
+                            "visibility" : {
+                              "path" : "xyz",
+                              "type" : "onNotNull"
+                            },
+                            "attributes" : {
+                              "toolTipText" : "Notifications",
+                              "leftIcon" : "bell-icon"
+                            },
+                            "uiAttributes" : {
+                              "mainStyle" : {
+                                "0" : {
+                                  "paddingTop" : "5px"
+                                }
+                              },
+                              "buttonStyle" : {
+                                "0" : {
+                                  "className" : "iconCenterButtonForMenu"
+                                }
+                              }
+                            },
+                            "eventMap" : "bellButton"
+                          },
+                          "994d3d2b-7ad9-489b-b25a-d1d892ded82f" : {
+                            "name" : "userDropdownContainer",
+                            "key" : "994d3d2b-7ad9-489b-b25a-d1d892ded82f",
+                            "type" : "FlexGrid",
+                            "uiAttributes" : {
+                              "mainStyle" : {
+                                "0" : {
+                                  "position" : "relative",
+                                  "justifyContent" : "center",
+                                  "marginRight" : "20px",
+                                  "marginLeft" : "20px"
+                                }
+                              }
+                            },
+                            "children" : {
+                              "c3d14dab-2a68-44f8-800f-be8541af53aa" : {
+                                "name" : "userMenu",
+                                "key" : "c3d14dab-2a68-44f8-800f-be8541af53aa",
+                                "type" : "FlexGrid",
+                                "uiAttributes" : {
+                                  "mainStyle" : {
+                                    "0" : {
+                                      "className" : "flexHorizontal",
+                                      "alignItems" : "center"
+                                    }
+                                  }
+                                },
+                                "children" : {
+                                  "c308dd0a-8e9e-439f-a235-57730d789fa3" : {
+                                    "name" : "usersTitle",
+                                    "key" : "c308dd0a-8e9e-439f-a235-57730d789fa3",
+                                    "type" : "Label",
+                                    "value" : "{firstName} {lastName}",
+                                    "uiAttributes" : {
+                                      "labelStyle" : {
+                                        "0" : {
+                                          "color" : "#FFF"
+                                        }
+                                      }
+                                    },
+                                    "attributes" : {
+                                      "templateBindings" : {
+                                        "firstName" : {
+                                          "path" : "_application.authentication.firstName",
+                                          "value" : ""
+                                        },
+                                        "lastName" : {
+                                          "path" : "_application.authentication.lastName",
+                                          "value" : ""
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "d1a7e44b-106c-491d-916d-e660e9b24ab3" : {
+                                    "name" : "userdownarrow",
+                                    "key" : "d1a7e44b-106c-491d-916d-e660e9b24ab3",
+                                    "type" : "Image",
+                                    "uiAttributes" : {
+                                      "mainStyle" : {
+                                        "0" : {
+                                          "width" : "10px",
+                                          "height" : "10px",
+                                          "marginLeft" : "3px"
+                                        }
+                                      },
+                                      "imgStyle" : {
+                                        "0" : {
+                                          "width" : "100%",
+                                          "height" : "100%"
+                                        }
+                                      }
+                                    },
+                                    "attributes" : {
+                                      "alt" : "No Image",
+                                      "src" : "/images/common/arrowDown-icon-white.svg"
+                                    }
+                                  }
+                                },
+                                "attributes" : {
+                                  "CLICK" : "userMenu_click"
+                                }
+                              },
+                              "ef8ba045-f07c-4c78-abe7-3af789f539e1" : {
+                                "name" : "userDropdown",
+                                "key" : "ef8ba045-f07c-4c78-abe7-3af789f539e1",
+                                "type" : "FlexGrid",
+                                "visibility" : {
+                                  "path" : ">openUserMenu",
+                                  "checkValue" : true,
+                                  "type" : "equal",
+                                  "notStrict" : true
+                                },
+                                "uiAttributes" : {
+                                  "mainStyle" : {
+                                    "0" : {
+                                      "className" : "flexGridMenuBody",
+                                      "width" : "150px",
+                                      "z-index" : "4"
+                                    }
+                                  }
+                                },
+                                "children" : {
+                                  "1d743031-28d8-4d6c-be9d-6e66e722c231" : {
+                                    "name" : "button1",
+                                    "type" : "Button",
+                                    "key" : "1d743031-28d8-4d6c-be9d-6e66e722c231",
+                                    "value" : "CSR",
+                                    "visibility" : {
+                                      "checkValue" : "AD_CSR_APP",
+                                      "type" : "hasPermissions"
+                                    },
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "button1"
+                                  },
+                                  "f403cecf-1177-4083-a9df-248a8de89f2e" : {
+                                    "name" : "orgillButton",
+                                    "type" : "Button",
+                                    "key" : "f403cecf-1177-4083-a9df-248a8de89f2e",
+                                    "value" : "IP Portal",
+                                    "visibility" : {
+                                      "checkValue" : "IP_PORTAL_APP",
+                                      "type" : "hasPermissions"
+                                    },
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "orgillButton"
+                                  },
+                                  "cd969cc8-fe6c-4642-80f9-d09b0328227b" : {
+                                    "name" : "ugcsrButton",
+                                    "type" : "Button",
+                                    "key" : "cd969cc8-fe6c-4642-80f9-d09b0328227b",
+                                    "value" : "CSR",
+                                    "visibility" : {
+                                      "checkValue" : "UG_CSR_APP",
+                                      "type" : "hasPermissions"
+                                    },
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "ugcsrButton"
+                                  },
+                                  "d9772b66-9055-44e4-8e59-3e02c0e972da" : {
+                                    "name" : "buttonCXsupport",
+                                    "type" : "Button",
+                                    "key" : "d9772b66-9055-44e4-8e59-3e02c0e972da",
+                                    "value" : "CX1 Support",
+                                    "visibility" : {
+                                      "checkValue" : "CX1_SUPPORT_APP",
+                                      "type" : "hasPermissions"
+                                    },
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "buttonCXsupport"
+                                  },
+                                  "013d7ad9-a3bf-4964-9f73-9483740bc19c" : {
+                                    "name" : "buttonSwitchuser",
+                                    "type" : "Button",
+                                    "key" : "013d7ad9-a3bf-4964-9f73-9483740bc19c",
+                                    "value" : "Switch User",
+                                    "visibility" : {
+                                      "path" : "_application.authentication.switchBackUser",
+                                      "checkValue" : true,
+                                      "type" : "equal",
+                                      "notStrict" : true
+                                    },
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "buttonSwitchuser"
+                                  },
+                                  "c67aeeb9-382d-4e9d-b7a9-96cdbcef7e0d" : {
+                                    "name" : "button21",
+                                    "type" : "Button",
+                                    "key" : "c67aeeb9-382d-4e9d-b7a9-96cdbcef7e0d",
+                                    "value" : "User Settings",
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "settingsButton"
+                                  },
+                                  "6a3a6e67-cd46-4782-bbd4-a4cbf043e412" : {
+                                    "name" : "button3",
+                                    "type" : "Button",
+                                    "key" : "6a3a6e67-cd46-4782-bbd4-a4cbf043e412",
+                                    "value" : "Logout",
+                                    "uiAttributes" : {
+                                      "buttonStyle" : {
+                                        "0" : {
+                                          "className" : "link short topBarDropdownButton"
+                                        }
+                                      }
+                                    },
+                                    "eventMap" : "button3"
+                                  }
+                                }
+                              }
+                            },
+                            "attributes" : {
+                              "MOUSEOUT" : "userDropdownContainer_MOUSEOUT"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "eventMap" : {
+                  "menuToggle" : {
+                    "event0" : {
+                      "type" : "CUSTOM_LOGIC",
+                      "customLogic" : "ToggleLogic",
+                      "path" : ">menuClose",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpDropdownContainer" : {
+                    "event0" : {
+                      "type" : "EVENT_DATA_CHANGE",
+                      "path" : ">openHelpMenu",
+                      "data" : false,
+                      "on" : "MOUSEOUT",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpTitle" : {
+                    "event0" : {
+                      "type" : "EVENT_DATA_CHANGE",
+                      "path" : ">openHelpMenu",
+                      "data" : true,
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpButton1" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "method" : "get",
+                      "url" : "api/asset/v1/dam/globalassets/Web/DOC/file/CX1%20-%20Platform%20Overview.pdf",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpButton2" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "method" : "get",
+                      "url" : "api/asset/v1/dam/globalassets/Web/DOC/file/CX1%20-%20Catalogs%20and%20Workspaces.pdf",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpButton3" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "method" : "get",
+                      "url" : "api/asset/v1/dam/globalassets/Web/DOC/file/CX1%20-%20Private%20Item%20Creation%20and%20Management.pdf",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpButton4" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "method" : "get",
+                      "url" : "api/asset/v1/dam/globalassets/Web/DOC/file/CX1%20-%20Exports%20Imports%20and%20Scheduler.pdf",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpButton5" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "method" : "get",
+                      "url" : "api/asset/v1/dam/globalassets/Web/DOC/file/CX1%20-%20Cheatsheets.pdf",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpButton6" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "method" : "get",
+                      "url" : "api/asset/v1/dam/globalassets/Web/DOC/file/CX1%20-%20User%20Management%20and%20Administration.pdf",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpButton7" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "method" : "get",
+                      "url" : "api/asset/v1/dam/globalassets/Web/DOC/file/CX1%20-%20SubscriberTaxonomy.pdf",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "settingsButton" : {
+                    "event0" : {
+                      "type" : "NAVIGATE",
+                      "data" : "../../../../../../../cx1/view/userSettings",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "bellButton" : {
+                    "event0" : {
+                      "type" : "DATA_CALL",
+                      "url" : "",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "userDropdownContainer" : {
+                    "event0" : {
+                      "type" : "EVENT_DATA_CHANGE",
+                      "path" : ">openUserMenu",
+                      "data" : false,
+                      "on" : "MOUSEOUT",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "userMenu" : {
+                    "event0" : {
+                      "type" : "EVENT_DATA_CHANGE",
+                      "path" : ">openUserMenu",
+                      "data" : true,
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "button1" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "url" : "../../../../../../ad_csr/view/",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "orgillButton" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "url" : "../../../../../../ip_portal/view/",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "ugcsrButton" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "url" : "../../../../../../ug_csr/view/",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "buttonCXsupport" : {
+                    "event0" : {
+                      "type" : "OPEN_LINK",
+                      "url" : "../../../../../../cx1_support/view/",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "buttonSwitchuser" : {
+                    "event0" : {
+                      "type" : "SWITCH_CALL",
+                      "url" : "api/prime/si/v1/members/switchBack",
+                      "method" : "get",
+                      "paramsType" : "QUERY_STRING",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "button3" : {
+                    "event0" : {
+                      "type" : "ACTION_LOGOUT",
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "helpDropdownContainer_MOUSEOUT" : {
+                    "event0" : {
+                      "type" : "EVENT_DATA_CHANGE",
+                      "path" : ">openHelpMenu",
+                      "data" : false,
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "userDropdownContainer_MOUSEOUT" : {
+                    "event0" : {
+                      "type" : "EVENT_DATA_CHANGE",
+                      "path" : ">openUserMenu",
+                      "data" : false,
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  },
+                  "userMenu_click" : {
+                    "event0" : {
+                      "type" : "EVENT_DATA_CHANGE",
+                      "path" : ">openUserMenu",
+                      "data" : true,
+                      "executionOrder" : 0.0,
+                      "eventName" : "event0"
+                    }
+                  }
+                }
+              },
+              "32e4b46a-99bb-41ee-ae41-858d288456c8" : {
+                "name" : "bodyFlexGrid",
+                "key" : "32e4b46a-99bb-41ee-ae41-858d288456c8",
+                "type" : "FlexGrid",
+                "uiAttributes" : {
+                  "mainStyle" : {
+                    "0" : {
+                      "className" : "flexHorizontal",
+                      "display" : "block"
+                    }
+                  }
+                },
+                "children" : {
+                  "e735ea0d-bff1-428b-a645-3fa93f85333a" : {
+                    "name" : "leftMenuGrid",
+                    "key" : "e735ea0d-bff1-428b-a645-3fa93f85333a",
+                    "type" : "FlexGrid",
+                    "visibility" : {
+                      "0" : {
+                        "type" : "onNull",
+                        "path" : ">menuClose"
+                      },
+                      "1" : {
+                        "type" : "equal",
+                        "path" : ">menuClose",
+                        "checkValue" : false,
+                        "notStrict" : true
+                      },
+                      "type" : "or"
+                    },
+                    "uiAttributes" : {
+                      "mainStyle" : {
+                        "0" : {
+                          "className" : "menuOpen",
+                          "backgroundColor" : "#FBFBFC",
+                          "boxShadow" : "inset -4px 5px 7px 0px rgba(146,161,175,0.06)",
+                          "float" : "left",
+                          "display" : "block"
+                        }
+                      }
+                    },
+                    "children" : {
+                      "23117ce5-5951-46e8-9c08-b274c4e0646c" : {
+                        "name" : "mainLogo",
+                        "key" : "23117ce5-5951-46e8-9c08-b274c4e0646c",
+                        "type" : "Image",
+                        "binding" : ">clientInfo.clientImage",
+                        "attributes" : {
+                          "alt" : "Cx1 logo",
+                          "selectBindingPath" : "client",
+                          "prefixUrl" : "api/asset/v1/dam/globalassets/client/IMG/file"
+                        },
+                        "uiAttributes" : {
+                          "mainStyle" : {
+                            "0" : {
+                              "padding" : "10px"
+                            }
+                          },
+                          "imgStyle" : {
+                            "0" : {
+                              "width" : "219px",
+                              "height" : "41px",
+                              "className" : "menuClientLogo"
+                            }
+                          }
+                        }
+                      },
+                      "08538eac-ef12-4bc4-b2e4-30b950cfe900" : {
+                        "name" : "menuComponent",
+                        "key" : "08538eac-ef12-4bc4-b2e4-30b950cfe900",
+                        "type" : "MenuComponent",
+                        "binding" : ">viewGroup",
+                        "uiAttributes" : {
+                          "mainStyle" : {
+                            "0" : {
+                              "position" : "relative"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "96c95798-f8e1-4768-808a-316c516559cd" : {
+                    "name" : "messageGrid",
+                    "key" : "96c95798-f8e1-4768-808a-316c516559cd",
+                    "type" : "AlertMessage",
+                    "binding" : "_message.messages",
+                    "attributes" : {
+                      "messageTypeCheck" : false
+                    },
+                    "uiAttributes" : {
+                      "mainStyle" : {
+                        "0" : {
+                          "className" : "messageContainer"
+                        }
+                      }
+                    },
+                    "eventMap" : "messageGrid"
+                  },
+                  "1fa52e99-3d83-4647-9912-3eade5c913ce" : {
+                    "name" : "welcomePopup",
+                    "type" : "Popup",
+                    "key" : "1fa52e99-3d83-4647-9912-3eade5c913ce",
+                    "attributes" : {
+                      "toggleVariablePath" : "_application.authentication.firstTimeLogin",
+                      "hasHeader" : false,
+                      "hasClosebutton" : false
+                    },
+                    "uiAttributes" : {
+                      "modalCardStyle" : {
+                        "0" : {
+                          "width" : "600px",
+                          "height" : "255px",
+                          "textAlign" : "center"
+                        }
+                      },
+                      "bodyStyle" : {
+                        "0" : {
+                          "padding" : "30px"
+                        }
+                      },
+                      "headerStyle" : {
+                        "0" : {
+                          "textAlign" : "left"
+                        }
+                      }
+                    },
+                    "children" : {
+                      "85bf9e24-2352-4bc5-9ba0-85e60f9c3886" : {
+                        "name" : "confirmLblgrid",
+                        "key" : "85bf9e24-2352-4bc5-9ba0-85e60f9c3886",
+                        "type" : "FlexGrid",
+                        "uiAttributes" : {
+                          "mainStyle" : {
+                            "0" : {
+                              "className" : "tablet-padding-5 mobile-padding-5 desktop-padding-5 wideScreen-padding-5"
+                            }
+                          }
+                        },
+                        "children" : {
+                          "c434dd67-0af5-4895-9a1e-beabef7d5b77" : {
+                            "name" : "confirmLabel",
+                            "key" : "c434dd67-0af5-4895-9a1e-beabef7d5b77",
+                            "type" : "Label",
+                            "value" : "Welcome to CX1",
+                            "uiAttributes" : {
+                              "mainStyle" : {
+                                "0" : {
+                                  "className" : "successCaption"
+                                }
+                              }
+                            }
+                          },
+                          "1763a9e7-ecfd-4df6-8f08-decfbcab73dc" : {
+                            "name" : "KeepBtn",
+                            "type" : "Button",
+                            "key" : "1763a9e7-ecfd-4df6-8f08-decfbcab73dc",
+                            "displaySequence" : 0.0,
+                            "value" : "OK",
+                            "uiAttributes" : {
+                              "mainStyle" : {
+                                "0" : {
+                                  "className" : "mobile-1 tablet-1 desktop-1 wideScreen-1"
+                                }
+                              },
+                              "buttonStyle" : {
+                                "0" : {
+                                  "className" : "secondary"
+                                }
+                              }
+                            },
+                            "eventMap" : "KeepBtn"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "2eef3de3-308c-4cd7-ae78-132d3a32e695" : {
+                    "name" : "mainViewGrid",
+                    "key" : "2eef3de3-308c-4cd7-ae78-132d3a32e695",
+                    "type" : "View"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eventMap" : {
+          "messageGrid" : {
+            "event0" : {
+              "type" : "ACTION_MESSAGE_DISMISS",
+              "path" : ">selectedMessageId",
+              "executionOrder" : 0.0,
+              "eventName" : "event0"
+            }
+          },
+          "KeepBtn" : {
+            "event0" : {
+              "type" : "DATA_CALL",
+              "url" : "api/iam/v1/users/firstTimeLoggedIn",
+              "innerEventMap" : {
+                "event0" : {
+                  "type" : "ACTION_REFRESH",
+                  "executionOrder" : 0.0,
+                  "eventName" : "event0"
+                }
+              },
+              "executionOrder" : 0.0,
+              "eventName" : "event0"
+            }
+          }
+        }
+      },
+      "translations" : {
+        "en" : { },
+        "fr" : { }
+      }
+    },
+    "forbiddenView" : "cx1ForbiddenView",
+    "promotionView" : "promotion",
+    "notificationTimeout" : 10.0,
+    "pwa" : {
+      "name" : "CX1 PIM",
+      "short_name" : "CX1 PIM",
+      "display" : "fullscreen",
+      "description" : "Unilog's CX1 PIM application, for your product information management",
+      "orientation" : "landscape",
+      "theme_color" : "#ffffff",
+      "background_color" : "#ffffff",
+      "lang" : "en",
+      "start_url" : "/cx1/view/",
+      "icons" : [ {
+        "src" : "/images/unilog_favicons/android-icon-36x36.png",
+        "sizes" : "36x36",
+        "type" : "image/png",
+        "density" : "0.75"
+      }, {
+        "src" : "/images/unilog_favicons/android-icon-48x48.png",
+        "sizes" : "48x48",
+        "type" : "image/png",
+        "density" : "1.0"
+      }, {
+        "src" : "/images/unilog_favicons/android-icon-72x72.png",
+        "sizes" : "72x72",
+        "type" : "image/png",
+        "density" : "1.5"
+      }, {
+        "src" : "/images/unilog_favicons/android-icon-96x96.png",
+        "sizes" : "96x96",
+        "type" : "image/png",
+        "density" : "2.0"
+      }, {
+        "src" : "/images/unilog_favicons/android-icon-144x144.png",
+        "sizes" : "144x144",
+        "type" : "image/png",
+        "density" : "3.0"
+      }, {
+        "src" : "/images/unilog_favicons/android-icon-192x192.png",
+        "sizes" : "192x192",
+        "type" : "image/png",
+        "density" : "4.0"
+      } ]
+    },
+    "onLoadData" : {
+      "event0" : {
+        "type" : "DATA_CALL",
+        "url" : "api/iam/v1/clients/loggedInClient",
+        "method" : "get",
+        "uniqueKey" : "clientsveryUnique",
+        "path" : ">clientInfo",
+        "condition" : {
+          "path" : "_application.hasAuthentication",
+          "checkValue" : true,
+          "type" : "equal",
+          "notStrict" : true
+        },
+        "executionOrder" : 0.0,
+        "eventName" : "event0"
+      },
+      "event1" : {
+        "url" : "api/uimetadata/v1/viewgroup",
+        "method" : "get",
+        "path" : ">viewGroup",
+        "condition" : {
+          "path" : "_application.hasAuthentication",
+          "checkValue" : true,
+          "type" : "equal",
+          "notStrict" : true
+        },
+        "executionOrder" : 1.0,
+        "eventName" : "event1"
+      }
+    },
+    "links" : {
+      "0" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "57x57",
+        "href" : "/images/unilog_favicons/apple-icon-57x57.png"
+      },
+      "1" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "60x60",
+        "href" : "/images/unilog_favicons/apple-icon-60x60.png"
+      },
+      "2" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "72x72",
+        "href" : "/images/unilog_favicons/apple-icon-72x72.png"
+      },
+      "3" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "76x76",
+        "href" : "/images/unilog_favicons/apple-icon-76x76.png"
+      },
+      "4" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "114x114",
+        "href" : "/images/unilog_favicons/apple-icon-114x114.png"
+      },
+      "5" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "120x120",
+        "href" : "/images/unilog_favicons/apple-icon-120x120.png"
+      },
+      "6" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "144x144",
+        "href" : "/images/unilog_favicons/apple-icon-144x144.png"
+      },
+      "7" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "57x57",
+        "href" : "/images/unilog_favicons/apple-icon-57x57.png"
+      },
+      "8" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "57x57",
+        "href" : "/images/unilog_favicons/apple-icon-57x57.png"
+      },
+      "9" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "152x152",
+        "href" : "/images/unilog_favicons/apple-icon-152x152.png"
+      },
+      "10" : {
+        "rel" : "apple-touch-icon",
+        "sizes" : "180x180",
+        "href" : "/images/unilog_favicons/apple-icon-180x180.png"
+      },
+      "11" : {
+        "rel" : "icon",
+        "type" : "image/png",
+        "sizes" : "192x192",
+        "href" : "/images/unilog_favicons/android-icon-192x192.png"
+      },
+      "12" : {
+        "rel" : "icon",
+        "type" : "image/png",
+        "sizes" : "32x32",
+        "href" : "/images/unilog_favicons/favicon-32x32.png"
+      },
+      "13" : {
+        "rel" : "icon",
+        "type" : "image/png",
+        "sizes" : "96x96",
+        "href" : "/images/unilog_favicons/favicon-96x96.png"
+      },
+      "14" : {
+        "rel" : "icon",
+        "type" : "image/png",
+        "sizes" : "16x16",
+        "href" : "/images/unilog_favicons/favicon-16x16.png"
+      }
+    },
+    "metas" : {
+      "0" : {
+        "name" : "msapplication-TileImage",
+        "content" : "/images/unilog_favicons/ms-icon-144x144.png"
+      }
+    },
+    "routes" : { },
+    "title" : "CX1"
+  },
+  "searchFields" : [ {
+    "displaySequence" : "0",
+    "displayName" : "Applications",
+    "url" : "/applications"
+  }, {
+    "displaySequence" : "1",
+    "displayName" : "View Groups",
+    "url" : "/viewGroups"
+  }, {
+    "displaySequence" : "2",
+    "displayName" : "Views",
+    "url" : "/views"
+  } ],
+  "appType" : "clientBased"
+}
